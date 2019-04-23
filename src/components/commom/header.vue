@@ -1,14 +1,12 @@
 <template>
   <div id="header">
     <div class="header-content">
-      <h1>Vue开发模板</h1>
-      <ul>
-
-        <router-link to="/home" tag="li" active-class="active-nav">首页</router-link>
-        <router-link to="/data" tag="li" active-class="active-nav">数据展示</router-link>
-        <router-link to="/message" tag="li" active-class="active-nav">消息展示</router-link>
-        <router-link to="/scheme" tag="li" active-class="active-nav">方案</router-link>
-
+      <h1 class="animated bounceInLeft">Iot Link</h1>
+      <ul class="animated bounceInDown">
+        <router-link to="/home" tag="li" class="hvr-underline-from-center">首页</router-link>
+        <router-link to="/data" tag="li" class="hvr-underline-from-center">数据展示</router-link>
+        <router-link to="/message" tag="li" class="hvr-underline-from-center">消息展示</router-link>
+        <router-link to="/scheme" tag="li" class="hvr-underline-from-center">方案</router-link>
       </ul>
       <div id="login-re">
         <router-link to="/login">登录</router-link>
@@ -36,17 +34,16 @@
       }
     },
     mounted () {
-
-
     }
   }
 </script>
 <style scoped type="text/scss" lang="scss">
-
   #header {
-    background: #009688 !important;
+    background: rgb(57, 82, 122) !important;
     width: 100%;
     height: 60px;
+    position: fixed;
+    z-index: 999;
   }
 
   .header-content {
@@ -70,19 +67,17 @@
   .header-content ul {
     margin-left: 200px;
     width: 80%;
-    height: 60px;
+    height: 40px;
     line-height: 60px;
-    background: #009688 !important;
   }
 
   .header-content ul li {
     color: #fff;
     padding: 0 20px;
-    height: 60px;
+    height: 50px;
     line-height: 60px;
     float: left;
     text-align: center;
-    border-bottom: 5px solid #009688;
     cursor: pointer;
   }
 
@@ -90,10 +85,10 @@
     border-bottom: 5px solid #5FB878;
   }
 
-  .header-content ul li:hover {
-    border-bottom: 5px solid #5FB878;
-    transition: .3s;
-  }
+  // .header-content ul li:hover {
+  //   border-bottom: 5px solid #5FB878;
+  //   transition: .3s;
+  // }
 
   .header-content #login-re {
     position: absolute;
@@ -109,6 +104,4 @@
     color: #fff;
     font-size: 14px;
   }
-
-
 </style>

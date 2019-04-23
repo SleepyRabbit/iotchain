@@ -13,27 +13,24 @@
 
 
 <script>
-//  import $
   export default ({
     data () {
       return {
-        title: "home"
-
       }
     },
     methods: {
 
     },
     mounted (){
-
     }
-
-
   })
-
-
 </script>
 
+<style scoped type="text/scss" lang="scss">
+  #home {
+    padding-top: 60px;
+  }
+</style>
 
 
 

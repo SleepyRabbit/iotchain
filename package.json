@@ -1,8 +1,8 @@
 {
-  "name": "vue_products",
+  "name": "iotchain",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "huangxueliang <huangxueliangvip@163.com>",
+  "author": "hex",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
