@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <div class="header-content">
-      <h1 class="animated bounceInLeft">Iot Link</h1>
+      <img class="animated bounceInLeft" src="../../assets/imgs/page404.png" alt="" width="60" height="48">
       <ul class="animated bounceInDown">
         <router-link to="/home" tag="li" class="hvr-underline-from-center">首页</router-link>
         <router-link to="/data" tag="li" class="hvr-underline-from-center">数据展示</router-link>
@@ -47,19 +47,21 @@
   }
 
   .header-content {
-    width: 1000px;
+    width: 90%;
     height: 60px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   .header-content h1 {
     color: #fff;
     height: 60px;
     line-height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     font-size: 20px;
     font-weight: 600;
   }
@@ -67,8 +69,6 @@
   .header-content ul {
     margin-left: 200px;
     width: 80%;
-    height: 40px;
-    line-height: 60px;
   }
 
   .header-content ul li {
@@ -81,9 +81,9 @@
     cursor: pointer;
   }
 
-  .header-content ul .active-nav {
-    border-bottom: 5px solid #5FB878;
-  }
+  // .header-content ul .active-nav {
+  //   border-bottom: 5px solid #5FB878;
+  // }
 
   // .header-content ul li:hover {
   //   border-bottom: 5px solid #5FB878;
